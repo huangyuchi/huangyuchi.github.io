@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="icon" href="./images/fav.png" type="image/gif">
+<link rel="icon" href="./images/narwhal.png" type="image/gif">
 
 
 <script type="application/javascript">
@@ -52,6 +52,11 @@ if (!doNotTrack) {
     ::-webkit-scrollbar-thumb {
         background: #6c757d;
     }
+
+		.responsive {
+		  width: 100%;
+		  height: auto;
+		}
 </style>
 <link rel="stylesheet" href="./css/v3/v3.css" media="all">
   <link rel="stylesheet" href="./css/v3/navbar-footer.css" media="all">
@@ -70,10 +75,11 @@ if (!doNotTrack) {
   <div><div class="container">
   <nav class="pt-3 navbar navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-easing="linear"
     data-aos-duration="500">
-    <a class="navbar-brand" href="./">
+    <a class="navbar-brand" href="./" style="font-size: 30px;">
 
-      <img src="./images/fav.png" width="30" height="30" class="d-inline-block align-top">
-      Hugo-profile
+      <img src="./images/narwhal.png" width="50" height="50" class="d-inline-block align-bottom">
+			<span class="px-1"></span>
+      HOME
 
     </a>
 
@@ -87,6 +93,14 @@ if (!doNotTrack) {
       <ul class="navbar-nav ml-auto text-center">
 
 
+
+				<li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="./#education"
+            aria-label="education">Education</a>
+        </li>
+
+
+
         <li class="nav-item navbar-text">
           <a class="nav-link text-dark" href="./#about" aria-label="about">About</a>
         </li>
@@ -96,13 +110,6 @@ if (!doNotTrack) {
         <li class="nav-item navbar-text">
           <a class="nav-link text-dark" href="./#experience"
             aria-label="experience">Experience</a>
-        </li>
-
-
-
-        <li class="nav-item navbar-text">
-          <a class="nav-link text-dark" href="./#education"
-            aria-label="education">Education</a>
         </li>
 
 
@@ -128,6 +135,10 @@ if (!doNotTrack) {
 
         <li class="nav-item navbar-text">
           <a class="nav-link text-dark" href="./blog" aria-label="Blog">Blog</a>
+        </li>
+
+				<li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="./resume02.pdf" aria-label="resume">CV</a>
         </li>
 
         <li class="nav-item navbar-text">
@@ -200,7 +211,7 @@ if (!doNotTrack) {
       <div class="col-md-5 text-center pt-2 pt-md-0 position-relative">
 
         <img data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"
-          src="./images/profile02.png" alt="Example name" class="rounded-circle" width="400">
+          src="./images/profile02.png" alt="Example name" class="rounded-circle" class="responsive">
 
       </div>
 
@@ -211,46 +222,34 @@ if (!doNotTrack) {
 <!-- section "Education" -->
 <section id="education" class="education-backdark education-back">
 <div class="container-fluid py-3 pt-5">
-<div class="text-dark text-center h3">Education</div>
+<div class="text-dark text-center h1">Education</div>
 <div class="row row-eq-height text-md-right justify-content-center">
 	<div class="col-md-5 pl-5 py-3 pb-0 v-center">
 		<ul class="edu">
 
-			<li class="py-2 edu-item">
-				<h5 class="text-muted" style="font-size: 20px">
-					B.tech - Information Technology
+			<ul>
+				<h5 class="fas fa-2x fa-graduation-cap" class="text-dark" style="font-size: 25px">
+					Tzu-Chi University
 				</h5>
-				<div style="font-size: 15px">Example university</div>
-				<div class="">
-					<small>2013</small>
-					-
-					<small>2018</small>
+				<div class="" style="font-size: 25px">
+					<small>Medicine</small><br>
+					<small>MD, 2018 - Present</small>
 				</div>
-			</li>
+			<br>
+		  </ul>
 
-			<li class="py-2 edu-item">
-				<h5 class="text-muted" style="font-size: 20px">
-					Degree - Branch
+			<ul>
+				<h5 class="fas fa-2x fa-graduation-cap" class="text-dark" style="font-size: 25px">
+					National Taiwan University
 				</h5>
-				<div style="font-size: 15px">Example university</div>
 				<div class="">
-					<small>year</small>
-					-
-					<small>year</small>
+					<div class="" style="font-size: 25px">
+						<small>Computer Science</small><br>
+						<small>Bachelor of Science, 2011 - 2016</small>
+					</div>
 				</div>
-			</li>
+			</ul>
 
-			<li class="py-2 edu-item">
-				<h5 class="text-muted" style="font-size: 20px">
-					Degree - Branch
-				</h5>
-				<div style="font-size: 15px">Example university</div>
-				<div class="">
-					<small>year</small>
-					-
-					<small>year</small>
-				</div>
-			</li>
 
 		</ul>
 	</div>
@@ -581,7 +580,7 @@ if (!doNotTrack) {
 <!-- section "Experience" -->
 <section id="experience">
   <div class="container-fluid pt-5">
-    <div class="text-dark text-center h3">Experience</div>
+    <div class="text-dark text-center h1">Experience</div>
 
     <div class="row justify-content-center py-md-5">
       <div class="d-md-none d-lg-none d-sm-block">
